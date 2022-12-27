@@ -1,0 +1,33 @@
+
+Tabela DIM_ORGAO_SUPERIOR: 
+
+ CREATE TABLE dim_orgao_superior
+(
+  ID_ORGAO_SUPERIOR BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_ORGAO_SUPERIOR BIGINT
+, DESC_ORGAO_SUPERIOR VARCHAR(45)
+)
+
+ CREATE INDEX idx_dim_orgao_superior_lookup ON dim_orgao_superior(COD_ORGAO_SUPERIOR)
+ CREATE INDEX idx_dim_orgao_superior_tk ON dim_orgao_superior(ID_ORGAO_SUPERIOR)
+
+------------------------------------
+
+Tabela DIM_UG_LICITACAO
+
+CREATE TABLE dim_ug_licitacao
+(
+  ID_UG_LICITACAO BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_UG_LICITACAO BIGINT
+, DESC_UG_LICITACAO VARCHAR(60)
+)
+;CREATE INDEX idx_dim_ug_licitacao_lookup ON dim_ug_licitacao(COD_UG_LICITACAO)
+;
+CREATE INDEX idx_dim_ug_licitacao_tk ON dim_ug_licitacao(ID_UG_LICITACAO)
+;
