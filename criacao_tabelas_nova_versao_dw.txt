@@ -30,4 +30,111 @@ CREATE TABLE dim_ug_licitacao
 ;CREATE INDEX idx_dim_ug_licitacao_lookup ON dim_ug_licitacao(COD_UG_LICITACAO)
 ;
 CREATE INDEX idx_dim_ug_licitacao_tk ON dim_ug_licitacao(ID_UG_LICITACAO)
+
+---------------------------------------
+
+Tabela DIM_ORGAO
+
+CREATE TABLE dim_orgao
+(
+  ID_ORGAO BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_ORGAO BIGINT
+, DESC_ORGAO VARCHAR(45)
+)
+;CREATE INDEX idx_dim_orgao_lookup ON dim_orgao(COD_ORGAO)
 ;
+CREATE INDEX idx_dim_orgao_tk ON dim_orgao(ID_ORGAO)
+;
+
+--------------------------------------
+
+Tabela DIM_UNIDADE_GESTORA
+
+CREATE TABLE dim_unidade_gestora
+(
+  ID_UG BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_UG BIGINT
+, DESC_UG VARCHAR(45)
+)
+;CREATE INDEX idx_dim_unidade_gestora_lookup ON dim_unidade_gestora(COD_UG)
+;
+CREATE INDEX idx_dim_unidade_gestora_tk ON dim_unidade_gestora(ID_UG)
+
+----------------------------------------
+
+Tabela DIM_ITEM_COMPRA
+
+CREATE TABLE dim_item_compra
+(
+  ID_ITEM_COMPRA BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_ITEM_COMPRA INT
+, DESC_ITEM_COMPRA VARCHAR(80)
+)
+;CREATE INDEX idx_dim_item_compra_lookup ON dim_item_compra(COD_ITEM_COMPRA)
+;
+CREATE INDEX idx_dim_item_compra_tk ON dim_item_compra(ID_ITEM_COMPRA)
+;
+
+------------------------------------------
+
+Tabela DIM_CONTRATO
+
+CREATE TABLE dim_contrato
+(
+  ID_CONTRATO BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_CONTRATO BIGINT
+, OBJETO_CONTRATO TEXT
+)
+;CREATE INDEX idx_dim_contrato_lookup ON dim_contrato(COD_CONTRATO)
+;
+CREATE INDEX idx_dim_contrato_tk ON dim_contrato(ID_CONTRATO)
+;
+
+-------------------------------------------
+
+Tabela DIM_SITUACAO
+
+CREATE TABLE dim_situacao
+(
+  ID_ORGAO BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, DESC_SITUACAO VARCHAR(13)
+)
+;CREATE INDEX idx_dim_situacao_lookup ON dim_situacao(DESC_SITUACAO)
+;
+CREATE INDEX idx_dim_situacao_tk ON dim_situacao(ID_ORGAO)
+;
+
+---------------------------------------------
+
+Tabela DIM_CONTRATADO
+
+ CREATE TABLE dim_contratado
+(
+  ID_CONTRATADO BIGINT NOT NULL PRIMARY KEY
+, VERSION INT
+, DATE_FROM DATETIME
+, DATE_TO DATETIME
+, COD_CONTRATADO BIGINT
+, DESC_CONTRATADO VARCHAR(80)
+)
+
+ CREATE INDEX idx_dim_contratado_lookup ON dim_contratado(COD_CONTRATADO)
+
+ CREATE INDEX idx_dim_contratado_tk ON dim_contratado(ID_CONTRATADO)
+
+-------------------------------------------------
