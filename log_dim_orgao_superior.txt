@@ -1,0 +1,9 @@
+2022/12/30 10:34:47 - carga_dim_orgao_superior - Using run configuration [Pentaho local]
+2022/12/30 10:34:47 - carga_dim_orgao_superior - Using legacy execution engine
+2022/12/30 10:34:47 - carrega_dados_dim_orgao_superior - Dispatching started for transformation [carrega_dados_dim_orgao_superior]
+2022/12/30 10:34:47 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 10:34:47 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 10:34:47 - Campos Orgao Superior.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:47 - ordenando_por_codigo.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:47 - distinguindo_dados.0 - Finished processing (I=0, O=0, R=3237, W=21, U=0, E=0)
+2022/12/30 10:34:47 - grava_dados_dim_orgao_superior.0 - Finished processing (I=21, O=0, R=21, W=21, U=0, E=0)

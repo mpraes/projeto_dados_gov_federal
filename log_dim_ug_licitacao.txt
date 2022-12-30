@@ -1,0 +1,9 @@
+2022/12/30 10:34:57 - carga_dim_ug_licitacao - Using run configuration [Pentaho local]
+2022/12/30 10:34:57 - carga_dim_ug_licitacao - Using legacy execution engine
+2022/12/30 10:34:57 - carga_dados_dim_ug_licitacao - Dispatching started for transformation [carga_dados_dim_ug_licitacao]
+2022/12/30 10:34:57 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 10:34:57 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 10:34:57 - campos_ug_licitacao.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:57 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:57 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3237, W=714, U=0, E=0)
+2022/12/30 10:34:57 - grava_dados_dim_ug_licitacao.0 - Finished processing (I=714, O=1, R=714, W=714, U=0, E=0)

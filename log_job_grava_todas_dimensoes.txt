@@ -1,0 +1,185 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jdk1.8.0_291
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jdk1.8.0_291\bin\java.exe
+
+C:\Program Files\pdi\pentaho-data-integration>"C:\Program Files\Java\jdk1.8.0_291\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\launcher.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal"\ /file:"C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\grava_todas_dimensoes.kjb" /level:Basic 
+09:48:39,076 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+09:48:47,321 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at C:\Program Files\pdi\pentaho-data-integrati ***
+***   on\.\system\karaf\caches\kitchen\data-1                               ***
+*** FastBin Provider Port:52901                                             ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+2022/12/30 09:48:48 - Kitchen - Logging is at level : Basic
+2022/12/30 09:48:48 - Kitchen - Start of run.
+Creating configuration from org.apache.felix.fileinstall-deploy.cfg
+Creating configuration from org.apache.karaf.command.acl.config.cfg
+Creating configuration from pentaho.geo.roles.cfg
+Creating configuration from org.apache.karaf.command.acl.shell.cfg
+Creating configuration from pentaho.metaverse.cfg
+Creating configuration from org.apache.karaf.command.acl.bundle.cfg
+Creating configuration from org.apache.karaf.log.cfg
+Creating configuration from mondrian.cfg
+Creating configuration from pentaho.marketplace.di.cfg
+Creating configuration from org.apache.activemq.server-default.cfg
+Creating configuration from org.apache.karaf.webconsole.cfg
+Creating configuration from org.apache.karaf.features.repos.cfg
+Creating configuration from org.apache.karaf.features.obr.cfg
+Creating configuration from org.pentaho.caching-default.cfg
+Creating configuration from org.ops4j.pax.web.cfg
+Creating configuration from org.apache.karaf.command.acl.kar.cfg
+Creating configuration from jmx.acl.java.lang.Memory.cfg
+Creating configuration from org.apache.karaf.command.acl.scope_bundle.cfg
+Creating configuration from org.apache.aries.rsa.provider.fastbin.cfg
+Creating configuration from org.apache.karaf.shell.cfg
+Creating configuration from org.apache.karaf.command.acl.system.cfg
+Creating configuration from jmx.acl.osgi.compendium.cm.cfg
+Creating configuration from org.pentaho.pdi.engine.spark.cfg
+Creating configuration from org.apache.karaf.command.acl.jaas.cfg
+Creating configuration from org.ops4j.pax.logging.cfg
+Creating configuration from jmx.acl.org.apache.karaf.security.jmx.cfg
+Creating configuration from jmx.acl.cfg
+Creating configuration from org.apache.activemq.webconsole.cfg
+Creating configuration from org.ops4j.pax.url.mvn.cfg
+Creating configuration from org.apache.karaf.jaas.cfg
+Creating configuration from org.apache.karaf.kar.cfg
+Creating configuration from jmx.acl.org.apache.karaf.bundle.cfg
+Creating configuration from pentaho.big.data.impl.cluster.cfg
+Creating configuration from org.apache.karaf.features.cfg
+Creating configuration from jmx.acl.org.apache.karaf.config.cfg
+Creating configuration from org.apache.karaf.command.acl.feature.cfg
+Creating configuration from org.apache.karaf.management.cfg
+Creating configuration from org.pentaho.features.cfg
+2022/12/30 09:49:02 - grava_todas_dimensoes - Start of job execution
+2022/12/30 09:49:02 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2022/12/30 09:49:02 - grava_todas_dimensoes - Starting entry [carga_dim_contratado]
+2022/12/30 09:49:02 - carga_dim_contratado - Using run configuration [Pentaho local]
+2022/12/30 09:49:02 - carga_dim_contratado - Using legacy execution engine
+2022/12/30 09:49:02 - carga_dados_dim_contratado - Dispatching started for transformation [carga_dados_dim_contratado]
+2022/12/30 09:49:02 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202211_Compras.csv'
+2022/12/30 09:49:02 - converter_string.0 - Finished processing (I=0, O=0, R=243, W=242, U=0, E=1)
+2022/12/30 09:49:02 - Input Data Compras.csv.0 - Finished processing (I=645, O=0, R=0, W=643, U=0, E=0)
+2022/12/30 09:49:02 - campos_contratado.0 - Finished processing (I=0, O=0, R=529, W=529, U=0, E=0)
+2022/12/30 09:49:02 - carga_dados_dim_contratado - Transformation detected one or more steps with errors.
+2022/12/30 09:49:02 - carga_dados_dim_contratado - Transformation is killing the other steps!
+2022/12/30 09:49:03 - grava_todas_dimensoes - Starting entry [carga_dim_contrato]
+2022/12/30 09:49:03 - carga_dim_contrato - Using run configuration [Pentaho local]
+2022/12/30 09:49:03 - carga_dim_contrato - Using legacy execution engine
+2022/12/30 09:49:03 - carga_dados_dim_contrato - Dispatching started for transformation [carga_dados_dim_contrato]
+2022/12/30 09:49:03 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 09:49:03 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 09:49:03 - campos_orgao.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:03 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:03 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3237, W=3150, U=0, E=0)
+2022/12/30 09:49:11 - grava_dados_dim_contrato.0 - Finished processing (I=669, O=0, R=3150, W=3150, U=5480, E=0)
+2022/12/30 09:49:12 - grava_todas_dimensoes - Starting entry [carga_dim_orgao_superior]
+2022/12/30 09:49:12 - carga_dim_orgao_superior - Using run configuration [Pentaho local]
+2022/12/30 09:49:12 - carga_dim_orgao_superior - Using legacy execution engine
+2022/12/30 09:49:12 - carrega_dados_dim_orgao_superior - Dispatching started for transformation [carrega_dados_dim_orgao_superior]
+2022/12/30 09:49:12 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 09:49:12 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 09:49:12 - Campos Orgao Superior.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:12 - ordenando_por_codigo.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:12 - distinguindo_dados.0 - Finished processing (I=0, O=0, R=3237, W=21, U=0, E=0)
+2022/12/30 09:49:12 - grava_dados_dim_orgao_superior.0 - Finished processing (I=21, O=0, R=21, W=21, U=0, E=0)
+2022/12/30 09:49:13 - grava_todas_dimensoes - Starting entry [carga_dim_situacao]
+2022/12/30 09:49:13 - carga_dim_situacao - Using run configuration [Pentaho local]
+2022/12/30 09:49:13 - carga_dim_situacao - Using legacy execution engine
+2022/12/30 09:49:13 - carga_dados_dim_situacao - Dispatching started for transformation [carga_dados_dim_situacao]
+2022/12/30 09:49:13 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 09:49:13 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 09:49:13 - campos_situacao.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:13 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3237, W=35, U=0, E=0)
+2022/12/30 09:49:13 - grava_dados_dim_situacao.0 - Finished processing (I=3, O=0, R=35, W=35, U=0, E=0)
+2022/12/30 09:49:14 - grava_todas_dimensoes - Starting entry [carga_dim_unidade_gestora]
+2022/12/30 09:49:14 - carga_dim_unidade_gestora - Using run configuration [Pentaho local]
+2022/12/30 09:49:14 - carga_dim_unidade_gestora - Using legacy execution engine
+2022/12/30 09:49:14 - carga_dados_dim_unidade_gestora - Dispatching started for transformation [carga_dados_dim_unidade_gestora]
+2022/12/30 09:49:14 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202211_Compras.csv'
+2022/12/30 09:49:14 - Input Data Compras.csv.0 - Finished processing (I=3183, O=0, R=0, W=3182, U=0, E=0)
+2022/12/30 09:49:14 - campos_orgao.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:14 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:14 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3182, W=902, U=0, E=0)
+2022/12/30 09:49:14 - grava_dados_dim_orgao.0 - Finished processing (I=902, O=0, R=902, W=902, U=0, E=0)
+2022/12/30 09:49:15 - grava_todas_dimensoes - Starting entry [Success]
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [Success] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [carga_dim_unidade_gestora] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [carga_dim_situacao] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [carga_dim_orgao_superior] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [carga_dim_contrato] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Finished job entry [carga_dim_contratado] (result=[true])
+2022/12/30 09:49:15 - grava_todas_dimensoes - Starting entry [carga_dim_item_compra]
+2022/12/30 09:49:15 - carga_dim_item_compra - Using run configuration [Pentaho local]
+2022/12/30 09:49:15 - carga_dim_item_compra - Using legacy execution engine
+2022/12/30 09:49:15 - carga_dados_dim_item_compra - Dispatching started for transformation [carga_dados_dim_item_compra]
+2022/12/30 09:49:15 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202212_ItemCompra.csv'
+2022/12/30 09:49:15 - Input Data Compras.csv.0 - Finished processing (I=252, O=0, R=0, W=251, U=0, E=0)
+2022/12/30 09:49:15 - campos_item_compra.0 - Finished processing (I=0, O=0, R=251, W=251, U=0, E=0)
+2022/12/30 09:49:15 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=251, W=251, U=0, E=0)
+2022/12/30 09:49:15 - distinguir_valores.0 - Finished processing (I=0, O=0, R=251, W=83, U=0, E=0)
+2022/12/30 09:49:15 - novos_codigos_item_compra.0 - Finished processing (I=0, O=0, R=83, W=83, U=0, E=0)
+2022/12/30 09:49:15 - grava_dados_dim_item_compra.0 - Finished processing (I=77, O=76, R=77, W=76, U=0, E=1)
+2022/12/30 09:49:15 - carga_dados_dim_item_compra - Transformation detected one or more steps with errors.
+2022/12/30 09:49:15 - carga_dados_dim_item_compra - Transformation is killing the other steps!
+2022/12/30 09:49:16 - grava_todas_dimensoes - Starting entry [carga_dim_modalidade]
+2022/12/30 09:49:16 - carga_dim_modalidade - Using run configuration [Pentaho local]
+2022/12/30 09:49:16 - carga_dim_modalidade - Using legacy execution engine
+2022/12/30 09:49:16 - carga_dados_dim_modalidade - Dispatching started for transformation [carga_dados_dim_modalidade]
+2022/12/30 09:49:16 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 09:49:16 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 09:49:16 - campos_modalidade.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:16 - trim.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:16 - distingue_descricoes.0 - Finished processing (I=0, O=0, R=3237, W=2610, U=0, E=0)
+2022/12/30 09:49:16 - grava_dados_dim_modalidade.0 - Finished processing (I=8, O=0, R=2610, W=2610, U=0, E=0)
+2022/12/30 09:49:17 - grava_todas_dimensoes - Starting entry [caga_dim_orgao]
+2022/12/30 09:49:17 - caga_dim_orgao - Using run configuration [Pentaho local]
+2022/12/30 09:49:17 - caga_dim_orgao - Using legacy execution engine
+2022/12/30 09:49:17 - carga_dados_dim_orgao - Dispatching started for transformation [carga_dados_dim_orgao]
+2022/12/30 09:49:17 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202211_Compras.csv'
+2022/12/30 09:49:17 - Input Data Compras.csv.0 - Finished processing (I=3183, O=0, R=0, W=3182, U=0, E=0)
+2022/12/30 09:49:17 - campos_orgao.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:17 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:17 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3182, W=181, U=0, E=0)
+2022/12/30 09:49:17 - grava_dados_dim_orgao.0 - Finished processing (I=181, O=0, R=181, W=181, U=0, E=0)
+2022/12/30 09:49:18 - grava_todas_dimensoes - Starting entry [carga_dim_ug_licitacao]
+2022/12/30 09:49:18 - carga_dim_ug_licitacao - Using run configuration [Pentaho local]
+2022/12/30 09:49:18 - carga_dim_ug_licitacao - Using legacy execution engine
+2022/12/30 09:49:18 - carga_dados_dim_ug_licitacao - Dispatching started for transformation [carga_dados_dim_ug_licitacao]
+2022/12/30 09:49:18 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 09:49:18 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 09:49:18 - campos_ug_licitacao.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:18 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 09:49:18 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3237, W=714, U=0, E=0)
+2022/12/30 09:49:18 - grava_dados_dim_ug_licitacao.0 - Finished processing (I=714, O=1, R=714, W=714, U=0, E=0)
+2022/12/30 09:49:19 - grava_todas_dimensoes - Starting entry [carga_dim_fundamento_legal]
+2022/12/30 09:49:19 - carga_dim_fundamento_legal - Using run configuration [Pentaho local]
+2022/12/30 09:49:19 - carga_dim_fundamento_legal - Using legacy execution engine
+2022/12/30 09:49:19 - carga_dados_dim_fundamento_legal - Dispatching started for transformation [carga_dados_dim_fundamento_legal]
+2022/12/30 09:49:19 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202211_Compras.csv'
+2022/12/30 09:49:19 - Input Data Compras.csv.0 - Finished processing (I=3183, O=0, R=0, W=3182, U=0, E=0)
+2022/12/30 09:49:19 - campos_fundamento.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:19 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 09:49:19 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3182, W=8, U=0, E=0)
+2022/12/30 09:49:20 - grava_todas_dimensoes - Starting entry [Success]
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [Success] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [carga_dim_fundamento_legal] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [carga_dim_ug_licitacao] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [caga_dim_orgao] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [carga_dim_modalidade] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Finished job entry [carga_dim_item_compra] (result=[true])
+2022/12/30 09:49:20 - grava_todas_dimensoes - Job execution finished
+2022/12/30 09:49:20 - Kitchen - Finished!
+2022/12/30 09:49:20 - Kitchen - Start=2022/12/30 09:48:48.087, Stop=2022/12/30 09:49:20.551
+2022/12/30 09:49:20 - Kitchen - Processing ended after 32 seconds.

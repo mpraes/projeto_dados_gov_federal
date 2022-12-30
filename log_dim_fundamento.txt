@@ -1,0 +1,8 @@
+2022/12/30 10:34:58 - carga_dim_fundamento_legal - Using run configuration [Pentaho local]
+2022/12/30 10:34:58 - carga_dim_fundamento_legal - Using legacy execution engine
+2022/12/30 10:34:58 - carga_dados_dim_fundamento_legal - Dispatching started for transformation [carga_dados_dim_fundamento_legal]
+2022/12/30 10:34:58 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202211_Compras.csv'
+2022/12/30 10:34:58 - Input Data Compras.csv.0 - Finished processing (I=3183, O=0, R=0, W=3182, U=0, E=0)
+2022/12/30 10:34:58 - campos_fundamento.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 10:34:58 - ordena_valores_por_codigo.0 - Finished processing (I=0, O=0, R=3182, W=3182, U=0, E=0)
+2022/12/30 10:34:58 - distinguir_valores.0 - Finished processing (I=0, O=0, R=3182, W=8, U=0, E=0)

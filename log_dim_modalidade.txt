@@ -1,0 +1,9 @@
+2022/12/30 10:34:55 - carga_dim_modalidade - Using run configuration [Pentaho local]
+2022/12/30 10:34:55 - carga_dim_modalidade - Using legacy execution engine
+2022/12/30 10:34:55 - carga_dados_dim_modalidade - Dispatching started for transformation [carga_dados_dim_modalidade]
+2022/12/30 10:34:55 - Input Data Compras.csv.0 - Header row skipped in file 'C:\Users\LVVE2K631\Documents\4.Projetos_Portifolio\dados_compras_gov_federal\202201_Compras.csv'
+2022/12/30 10:34:55 - Input Data Compras.csv.0 - Finished processing (I=3238, O=0, R=0, W=3237, U=0, E=0)
+2022/12/30 10:34:55 - campos_modalidade.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:55 - trim.0 - Finished processing (I=0, O=0, R=3237, W=3237, U=0, E=0)
+2022/12/30 10:34:55 - distingue_descricoes.0 - Finished processing (I=0, O=0, R=3237, W=2610, U=0, E=0)
+2022/12/30 10:34:55 - grava_dados_dim_modalidade.0 - Finished processing (I=8, O=0, R=2610, W=2610, U=0, E=0)
